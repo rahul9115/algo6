@@ -87,7 +87,7 @@
 						    <div class="text">
 								<span style="margin-left:20px;"><img src="{{ url_for('static',filename='images/fastro.png')}}" alt=""></span>
 								<ul class="nav navbar-nav navbar-right">
-									<li style="float:right"><a href="{{ url_for('login1') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+									<li style="float:right"><a href="{{ url_for('index1') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 								  </ul>
 						    	
 						    </div>
@@ -119,18 +119,13 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
-	      <form action="#" class="searchform order-lg-last">
-          <div class="form-group d-flex">
-            <input type="text" class="form-control pl-3" placeholder="Search">
-            <button type="submit" placeholder="" class="form-control search"><span class="ion-ios-search"></span></button>
-          </div>
-        </form>
+	      
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="{{ url_for('index1')}}" class="nav-link">Home</a></li>
+	        	<li class="nav-item active"><a href="{{ url_for('log')}}" class="nav-link">Home</a></li>
 	        	
-	        	<li class="nav-item"><a href="{{ url_for('services1')}}" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="{{ url_for('contact1')}}" class="nav-link">Contact</a></li>
+	        	<li class="nav-item"><a href="{{ url_for('servicesout1')}}" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="{{ url_for('contactout')}}" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -159,10 +154,10 @@
         </div>
       </div>
       <div class="jumbotron div5" id="id5">
-          <h6>Click here to check out our exclusive courses at:  </h6><br><br><a href="{{ url_for('services1')}}">Fastro_Services</a>
+          <h6>Click here to check out our exclusive courses at:  </h6><br><br><a href="{{ url_for('servicesout1')}}">Fastro_Services</a>
       </div>
       <div class="jumbotron div6" id="id6">
-        <h6>Lets search jobs for you. You can also go through the services of our website: </h6><br><br><a href="{{ url_for('services1')}}">Fastro_Services</a>
+        <h6>Lets search jobs for you. You can also go through the services of our website: </h6><br><br><a href="{{ url_for('servicesout1')}}">Fastro_Services</a>
     </div>
       <script>
           function call(){

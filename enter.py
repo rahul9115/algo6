@@ -30,6 +30,15 @@ app1=Flask(__name__,template_folder="sign_up")
 @app1.route("/")
 def sign_up():
     return render_template("index.html")
+@app1.route("/log")
+def log():
+    return render_template("logout.html")
+@app1.route("/servicesout1")
+def servicesout1():
+    return render_template("servicesout1.html")
+@app1.route("/contactout")
+def contactout():
+    return render_template("contactout.html")            
 @app1.route("/login1")
 def login1():
     return render_template('login.html')

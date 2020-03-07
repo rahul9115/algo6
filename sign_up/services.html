@@ -46,12 +46,7 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
-	      <form action="#" class="searchform order-lg-last">
-          <div class="form-group d-flex">
-            <input type="text" class="form-control pl-3" placeholder="Search">
-            <button type="submit" placeholder="" class="form-control search"><span class="ion-ios-search"></span></button>
-          </div>
-        </form>
+	      
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
 	        	<li class="nav-item"><a href="{{url_for('index1')}}" class="nav-link">Home</a></li>
@@ -81,23 +76,23 @@
           <div class="col-md-8 text-center heading-section ftco-animate">
           	<span class="subheading">Services</span>
             <h2 class="mb-4">Why Choose Us?</h2>
-            <p>Because we offer the best and in depth knowledge into the fields we specialize, our clients  turn out to be highly skilled professionals. We encourage them to pursue their passion as we believe it as the best to achieve greater excellence.</p>
+            <p>Because we offer the most appropriate solution to gradutes essential problems. If you are looking to fly high in your career you are at the right place.</p>
           </div>
         </div>
   			<div class="row tabulation mt-4 ftco-animate">
   				<div class="col-md-4">
 						<ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
 						  <li class="nav-item text-left">
-						    <a class="nav-link active py-4" data-toggle="tab" href="#services-1"><span class="flaticon-analysis mr-2"></span> Management</a>
+						    <a class="nav-link active py-4" data-toggle="tab" href="#services-1"><span class="flaticon-analysis mr-2"></span>Management</a>
 						  </li>
 						  <li class="nav-item text-left">
 						    <a class="nav-link py-4" data-toggle="tab" href="#services-2"><span class="flaticon-business mr-2"></span>Engineering</a>
 						  </li>
 						  <li class="nav-item text-left">
-						    <a class="nav-link py-4" data-toggle="tab" href="#services-3"><span class="flaticon-insurance mr-2"></span>Finance</a>
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-3"><span class="flaticon-insurance mr-2"></span>Humanities and Social Sciences</a>
 						  </li>
 						  <li class="nav-item text-left">
-						    <a class="nav-link py-4" data-toggle="tab" href="#services-4"><span class="flaticon-money mr-2"></span> Entrepreneurship</a>
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-4"><span class="flaticon-money mr-2"></span>Finance</a>
 						  </li>
 						  
 						</ul>
@@ -106,22 +101,31 @@
 						<div class="tab-content">
 						  <div class="tab-pane container p-0 active" id="services-1">
 						  	<div class="img" style="background-image: url({{ url_for('static',filename='images/project-2.jpg')}});"></div>
-						  	<h3><a href="#">Management</a></h3>
+							  <h3><a href="#">Management</a></h3>
+							  <br>
+							  <a href="{{url_for('courses')}}" style="padding:10px;color:black;text-decoration: none;border:solid 1px;">Know More</a> 
 						  	<p></p>
 						  </div>
 						  <div class="tab-pane container p-0 fade" id="services-2">
 						  	<div class="img" style="background-image: url({{ url_for('static',filename='images/project-3.jpg')}});"></div>
-						  	<h3><a href="#">Engineering</a></h3>
+							  <h3><a href="#">Engineering</a></h3>
+							  <br>
+							  <a href="{{url_for('courses')}}" style="padding:10px;color:black;text-decoration: none;border:solid 1px;">Know More</a> 
 						  	<p></p>
 						  </div>
 						  <div class="tab-pane container p-0 fade" id="services-3">
 						  	<div class="img" style="background-image: url({{ url_for('static',filename='images/project-4.jpg')}});"></div>
-						  	<h3><a href="#">Finance</a></h3>
+						  	<h3><a href="#">Humanities and Social Sciences
+							</a></h3>
+							<br>
+							<a href="{{url_for('courses')}}" style="padding:10px;color:black;text-decoration: none;border:solid 1px;">Know More</a> 
 						  	<p></p>
 						  </div>
 						  <div class="tab-pane container p-0 fade" id="services-4">
 						  	<div class="img" style="background-image: url({{ url_for('static',filename='images/project-5.jpg')}});"></div>
-						  	<h3><a href="#">Entrepreneurship</a></h3>
+							  <h3><a href="#">Finance</a></h3>
+							 <br> 
+							  <a href="{{url_for('courses')}}" style="padding:10px;color:black;text-decoration: none;border:solid 1px;">Know More</a> 
 						  	<p></p>
 						  </div>
 						  <div class="tab-pane container p-0 fade" id="services-5">
@@ -141,6 +145,7 @@
 							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-analysis"></span></div>
 							<div class="text media-body">
 								<h3>Management</h3>
+								
 								<p></p>
 							</div>
 						</div>
@@ -158,7 +163,7 @@
 						<div class="services-2 border rounded text-center ftco-animate">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-insurance"></span></div>
 							<div class="text media-body">
-								<h3>Finanace</h3>
+								<h3>Humanities and Social Sciences</h3>
 								<p></p>
 							</div>
 						</div>
@@ -167,7 +172,7 @@
 						<div class="services-2 border rounded text-center ftco-animate">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-money"></span></div>
 							<div class="text media-body">
-								<h3>Entrepreneurship</h3>
+								<h3>Finance</h3>
 								<p></p>
 							</div>
 						</div>
