@@ -23,6 +23,7 @@ pincode=' '
 message=' '
 biap=" "
 biap1=" "
+
 global name
 global books
 books=[]
@@ -109,6 +110,8 @@ def datacheck():
             message=0
             return render_template("login.html",message=message)
 @app1.route("/datastore1",methods=["POST","GET"])
+
+
 def datastore1():
     if request.method=="POST":
         f_name=request.form.get("f_name")
@@ -124,16 +127,54 @@ def datastore1():
     if r_password==password:
         db.execute("insert into"+' "Readers"('+'"First_name","Middle_name","Last_name","Sex","User_Id","password","Country","City","Pincode") '+f"values('{f_name}','{m_name}','{l_name}','{sex}','{username}','{password}','{country}','{city}','{pincode}')")
         return render_template('login.html')
-    else:
-        message=1
-        return render_template('sign_up.html',message=message)
 @app1.route("/ec")
 def ec():
     return render_template("entreprenuership_course.html")
 @app1.route("/courses")
 def courses():
-    return render_template("courses.html")            
-    
+    return render_template("courses.html")
+@app1.route("/ai")
+def ai():
+    return render_template("AI & ML course.html")
+@app1.route("/data")
+def data():
+    return render_template("Data Science Course.html")
+@app1.route("/stack")
+def stack():
+    return render_template("Full Stack Developer Course.html")
+@app1.route("/buisness")
+def buisness():
+    return render_template("Business Management_course.html")                                
+
+@app1.route("/account")
+def account():
+    return render_template("Management Accounting_course.html")
+
+@app1.route("/soft")
+def soft():
+    return render_template("Soft Skills Course.html")
+
+@app1.route("/deduct")
+def deduct():
+    return render_template("Deductive Logic Course.html")
+
+@app1.route("/admin")
+def admin():
+    return render_template("Constitution of India and Environmental Governance_Course.html")
+
+@app1.route("/finan")
+def finan():
+    return render_template("Financial Accounting_course.html")
+
+@app1.route("/stock")
+def stock():
+    return render_template("Stock Market_course.html")
+
+@app1.route("/quant")
+def quant():
+    return render_template("Quantitive Finance_course.html")
+
+ 
 if __name__=="__main__":
     app1.debug=True
     app1.run(host="127.0.0.1",port=5000)
